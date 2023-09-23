@@ -16,7 +16,7 @@ public class Person {
     private static final int MAX_YEAR = 2023;
 
     @NotEmpty(message = "ФИО не должно быть пустым")
-    @Size(min = 2, max = 60, message = "Длинна ФИО должна быть 2-60")
+    @Size(min = 2, max = 60, message = "Длина ФИО должна быть 2-60")
     @Pattern(regexp = "([А-ЯЁ][а-яё]+[\\-\\s]?){3,}", message = "ФИО должно быть в формате Фамилия Имя Отчество")
     @Column(name = "fullname")
     private String fullname;

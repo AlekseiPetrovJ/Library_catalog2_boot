@@ -18,11 +18,11 @@ public class Book {
     @Transient
     private static final int MAX_YEAR = 2023;
     @NotEmpty(message = "Название не должно быть пустым")
-    @Size(min = 2, max = 200, message = "Длинна названия должна быть 2-200")
+    @Size(min = 2, max = 200, message = "Длина названия должна быть 2-200")
     @Column(name = "name")
     private String name;
     @NotEmpty(message = "Автор не должен быть пустым")
-    @Size(min = 2, max = 200, message = "Длинна имени автора должна быть 2-200")
+    @Size(min = 2, max = 200, message = "Длина имени автора должна быть 2-200")
     @Column(name = "author")
     private String author;
     @Min(value = (MAX_YEAR - 99), message = "Год издания не должен быть раньше " + (MAX_YEAR - 99))
